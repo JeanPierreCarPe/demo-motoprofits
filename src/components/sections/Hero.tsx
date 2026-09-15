@@ -19,7 +19,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 bg-black/10" aria-hidden />
 
       <div className="flex w-full max-w-[1440px] flex-col items-center justify-between gap-8 lg:flex-row lg:items-end">
-        <h1 className="relative font-heading text-6xl font-extrabold uppercase leading-[0.95] sm:text-8xl lg:text-[11rem]">
+        <h1 className="relative shrink font-heading text-6xl font-extrabold uppercase leading-[0.95] sm:text-8xl lg:text-8xl xl:text-9xl 2xl:text-[11rem]">
           <span
             aria-hidden
             className="pointer-events-none absolute inset-0 translate-x-2 translate-y-2 text-transparent"
@@ -40,7 +40,7 @@ export function Hero() {
           </span>
         </h1>
 
-        <div className="flex w-full max-w-[328px] flex-col items-start gap-7 overflow-hidden rounded-[20px] bg-background/90 p-5 shadow-[0_0_20px_0_rgba(0,0,0,0.25)] backdrop-blur-[5px]">
+        <div className="flex w-full max-w-[328px] shrink-0 flex-col items-start gap-7 overflow-hidden rounded-[20px] bg-background/90 p-5 shadow-[0_0_20px_0_rgba(0,0,0,0.25)] backdrop-blur-[5px] lg:min-w-[280px]">
           <p className="font-body text-lg text-foreground sm:text-xl">{hero.paragraph}</p>
           <div className="flex w-full flex-col items-start gap-5">
             <GoldButton href={hero.primaryCtaHref} className="w-full">

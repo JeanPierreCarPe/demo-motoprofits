@@ -5,7 +5,6 @@ export const navLinks = {
   ],
   right: [
     { label: "How it works", href: "/how-it-works" },
-    { label: "Blog", href: "/blog" },
   ],
   cta: { label: "Get Started", href: "/auth" },
 };
