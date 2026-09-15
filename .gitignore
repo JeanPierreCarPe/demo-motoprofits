@@ -1,0 +1,35 @@
+# dependencies
+node_modules
+
+# next.js build output
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+
+# raw/unprocessed source images — public/images holds the compressed, deployed versions
+image
+
+# internal planning docs — not part of the delivered product
+docs
+
+# env
+.env
+.env*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# testing / tooling artifacts
+.playwright-mcp
+coverage
+
+# misc
+*.pem
