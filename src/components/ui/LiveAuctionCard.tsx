@@ -4,7 +4,7 @@ import { LiveAuction } from "@/data/siteContent";
 import { slugify } from "@/lib/slugify";
 import { StatBox } from "./StatBox";
 import { PremiumBadge } from "./Badge";
-import { GoldButton } from "./Button";
+import { BidActionButton } from "./BidActionButton";
 import { Countdown } from "./Countdown";
 
 export function LiveAuctionCard({
@@ -72,9 +72,7 @@ export function LiveAuctionCard({
             </span>
           </div>
         </div>
-        <GoldButton href={href} className="w-full">
-          Place Bid
-        </GoldButton>
+        <BidActionButton mode="bid" />
       </div>
     </article>
   );

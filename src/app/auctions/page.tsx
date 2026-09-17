@@ -84,11 +84,23 @@ export default function AuctionsPage() {
       </section>
 
       <section className="flex flex-col items-center gap-12 px-5 py-8 sm:px-10 lg:px-20">
-        <Container className="flex flex-wrap items-start gap-8">
-          {filtered.map((auction, i) => (
-            <LiveAuctionCard key={auction.name} auction={auction} priority={i < 2} />
-          ))}
-        </Container>
+        {filtered.length > 0 ? (
+          <Container className="flex flex-wrap items-start gap-8">
+            {filtered.map((auction, i) => (
+              <LiveAuctionCard key={auction.name} auction={auction} priority={i < 2} />
+            ))}
+          </Container>
+        ) : (
+          <Container className="flex flex-col items-center gap-4 rounded-[20px] border-2 border-dashed border-foreground/25 bg-surface-alt px-8 py-16 text-center">
+            <p className="font-heading text-xl font-extrabold uppercase text-foreground sm:text-2xl">
+              No Live Auctions in {category} Right Now
+            </p>
+            <p className="max-w-md font-body text-foreground/70">
+              New auctions in this category open regularly — in the meantime, browse the full {category} lineup in the Premium Collection.
+            </p>
+            <GoldButton href="/collection">Browse {category} Collection</GoldButton>
+          </Container>
+        )}
       </section>
 
       <section className="flex flex-col items-center gap-6 px-5 py-12 sm:px-10 lg:px-20">

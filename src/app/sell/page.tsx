@@ -26,7 +26,7 @@ export default function SellPage() {
   return (
     <>
       <section className="relative flex min-h-[560px] flex-col items-center justify-center gap-10 overflow-hidden px-5 pb-24 pt-[140px] sm:px-10 lg:px-20">
-        <Image src="/images/handoff-02.webp" alt="" fill className="-z-20 object-cover" aria-hidden />
+        <Image src="/images/handoff-02.webp" alt="" fill sizes="100vw" className="-z-20 object-cover" aria-hidden />
         <div className="absolute inset-0 -z-10 bg-black/75" aria-hidden />
         <Container className="flex flex-col items-center gap-8 text-center">
           <h1 className="max-w-3xl break-words font-heading text-4xl font-extrabold uppercase leading-[0.98] text-foreground sm:text-6xl lg:text-7xl">

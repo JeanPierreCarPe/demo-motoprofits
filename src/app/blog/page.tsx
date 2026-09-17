@@ -32,7 +32,7 @@ export default function BlogPage() {
             className="flex flex-col overflow-hidden rounded-[20px] border-2 border-gold bg-surface lg:flex-row"
           >
             <div className="relative h-64 w-full lg:h-auto lg:w-1/2">
-              <Image src={featured.image} alt={featured.title} fill className="object-cover" />
+              <Image src={featured.image} alt={featured.title} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
             </div>
             <div className="flex flex-1 flex-col justify-center gap-4 p-6 sm:p-10">
               <span className="w-fit rounded-full bg-gold/20 px-4 py-1.5 font-heading text-xs font-extrabold uppercase tracking-wider text-gold">
@@ -73,7 +73,7 @@ export default function BlogPage() {
               className="flex w-full flex-col overflow-hidden rounded-[16px] border-2 border-accent-violet bg-surface sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)]"
             >
               <div className="relative h-48 w-full">
-                <Image src={post.image} alt={post.title} fill className="object-cover" />
+                <Image src={post.image} alt={post.title} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
               </div>
               <div className="flex flex-1 flex-col gap-3 p-5">
                 <span className="w-fit rounded-full bg-gold/20 px-3 py-1 font-heading text-xs font-extrabold uppercase tracking-wider text-gold">

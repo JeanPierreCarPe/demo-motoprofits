@@ -37,7 +37,7 @@ export default function VehicleDetailPage({ params }: { params: { slug: string }
     <>
       {/* Gallery hero */}
       <section className="relative flex h-[420px] items-end overflow-hidden px-5 pb-8 pt-[140px] sm:h-[520px] sm:px-10 lg:h-[620px] lg:px-20 lg:pb-12">
-        <Image src={vehicle.image} alt={vehicle.name} fill priority className="-z-10 object-cover" />
+        <Image src={vehicle.image} alt={vehicle.name} fill priority sizes="100vw" className="-z-10 object-cover" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/85 via-black/20 to-black/10" aria-hidden />
         <Container className="flex flex-wrap items-end justify-between gap-4">
           <div className="flex flex-col gap-3">
@@ -179,7 +179,7 @@ export default function VehicleDetailPage({ params }: { params: { slug: string }
                   className="flex w-full flex-col overflow-hidden rounded-[20px] border-2 border-accent-violet bg-surface shadow-[0_0_20px_0_rgba(0,0,0,0.5)] sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
                 >
                   <div className="relative h-56 w-full">
-                    <Image src={v.image} alt={v.name} fill className="object-cover" />
+                    <Image src={v.image} alt={v.name} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" />
                   </div>
                   <div className="flex flex-col gap-2 p-5">
                     <div className="flex items-center justify-between gap-2">

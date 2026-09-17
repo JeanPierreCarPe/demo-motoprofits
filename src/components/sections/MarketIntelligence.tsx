@@ -31,7 +31,7 @@ export function MarketIntelligence() {
                 className="flex w-full items-center gap-5 overflow-hidden rounded-xl border border-foreground/50 bg-background pr-4 transition-colors hover:border-gold sm:gap-8 sm:pr-10"
               >
                 <div className="relative w-20 shrink-0 self-stretch sm:w-28">
-                  <Image src={sale.image} alt={sale.name} fill className="object-cover" />
+                  <Image src={sale.image} alt={sale.name} fill sizes="112px" className="object-cover" />
                 </div>
                 <div className="flex flex-1 flex-col items-start gap-1 py-3">
                   <p className="font-heading text-lg font-extrabold text-foreground sm:text-xl">

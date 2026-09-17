@@ -110,7 +110,7 @@ export default function CollectionPage() {
                   className="flex flex-1 min-w-64 items-center gap-4 rounded-xl border border-foreground/25 bg-surface-alt p-4 transition-colors hover:border-gold"
                 >
                   <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-lg">
-                    <Image src={sale.image} alt={sale.name} fill className="object-cover" />
+                    <Image src={sale.image} alt={sale.name} fill sizes="80px" className="object-cover" />
                   </div>
                   <div>
                     <p className="font-body text-sm font-semibold text-foreground">{sale.name}</p>

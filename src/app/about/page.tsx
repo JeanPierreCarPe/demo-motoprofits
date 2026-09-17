@@ -74,7 +74,7 @@ export default function AboutPage() {
             {aboutTeam.map((person) => (
               <div key={person.name} className="flex w-56 flex-col items-center gap-3 text-center">
                 <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-gold">
-                  <Image src={person.image} alt={person.name} fill className="object-cover" />
+                  <Image src={person.image} alt={person.name} fill sizes="128px" className="object-cover" />
                 </div>
                 <p className="font-heading font-extrabold text-foreground">{person.name}</p>
                 <p className="font-body text-sm text-gold">{person.role}</p>

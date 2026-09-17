@@ -26,7 +26,7 @@ function baseClasses(variant: "gold" | "outline" | "pill" | "dark", className: s
 export function GoldButton({ className = "", children, href, ...props }: GoldButtonProps) {
   if (href) {
     return (
-      <Link href={href} className={baseClasses("gold", className)}>
+      <Link href={href} className={baseClasses("gold", className)} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {children}
       </Link>
     );
@@ -41,7 +41,7 @@ export function GoldButton({ className = "", children, href, ...props }: GoldBut
 export function OutlineButton({ className = "", children, href, ...props }: GoldButtonProps) {
   if (href) {
     return (
-      <Link href={href} className={baseClasses("outline", className)}>
+      <Link href={href} className={baseClasses("outline", className)} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {children}
       </Link>
     );
@@ -56,7 +56,7 @@ export function OutlineButton({ className = "", children, href, ...props }: Gold
 export function DarkButton({ className = "", children, href, ...props }: GoldButtonProps) {
   if (href) {
     return (
-      <Link href={href} className={baseClasses("dark", className)}>
+      <Link href={href} className={baseClasses("dark", className)} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {children}
       </Link>
     );
@@ -71,7 +71,7 @@ export function DarkButton({ className = "", children, href, ...props }: GoldBut
 export function PillButton({ className = "", children, href, ...props }: GoldButtonProps) {
   if (href) {
     return (
-      <Link href={href} className={baseClasses("pill", className)}>
+      <Link href={href} className={baseClasses("pill", className)} {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {children}
       </Link>
     );

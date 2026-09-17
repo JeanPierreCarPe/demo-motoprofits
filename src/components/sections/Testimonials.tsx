@@ -19,6 +19,7 @@ export function Testimonials() {
         src={testimonial.image}
         alt=""
         fill
+        sizes="100vw"
         className="-z-20 object-cover"
         aria-hidden
       />
@@ -29,6 +30,7 @@ export function Testimonials() {
           src={testimonial.image}
           alt={testimonial.author}
           fill
+          sizes="(min-width: 1024px) 624px, 100vw"
           className="object-cover"
         />
       </div>

@@ -13,6 +13,7 @@ export function Hero() {
         alt=""
         fill
         priority
+        sizes="100vw"
         className="-z-10 object-cover"
         aria-hidden
       />

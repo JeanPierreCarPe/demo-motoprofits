@@ -18,7 +18,7 @@ export function BackgroundSection({
     <section
       className={`relative flex flex-col items-center gap-12 overflow-hidden px-5 py-16 sm:px-10 sm:py-20 lg:px-20 lg:py-24 ${className}`}
     >
-      <Image src={backgroundImage} alt="" fill className="-z-20 object-cover" aria-hidden />
+      <Image src={backgroundImage} alt="" fill sizes="100vw" className="-z-20 object-cover" aria-hidden />
       <div className={`absolute inset-0 -z-10 ${overlayClassName}`} aria-hidden />
       {children}
     </section>

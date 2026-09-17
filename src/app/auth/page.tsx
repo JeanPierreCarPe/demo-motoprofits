@@ -18,7 +18,7 @@ export default function AuthPage() {
 
   return (
     <section className="relative flex min-h-[calc(100vh-80px)] items-center justify-center overflow-hidden px-5 pb-24 pt-[140px] sm:px-10">
-      <Image src="/images/auction-hero-04.webp" alt="" fill priority className="-z-20 object-cover" aria-hidden />
+      <Image src="/images/auction-hero-04.webp" alt="" fill priority sizes="100vw" className="-z-20 object-cover" aria-hidden />
       <div className="absolute inset-0 -z-10 bg-black/80" aria-hidden />
 
       <div className="flex w-full max-w-md flex-col gap-8 rounded-[20px] border-2 border-gold bg-surface/95 p-6 backdrop-blur-[6px] sm:p-10">

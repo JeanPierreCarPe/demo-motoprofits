@@ -705,7 +705,7 @@ export const footer = {
   tagline: "Where Speed Meets Value",
   links: [
     { label: "Auctions", href: "/auctions" },
-    { label: "Collections", href: "/collection" },
+    { label: "Collection", href: "/collection" },
     { label: "Process", href: "/how-it-works" },
     { label: "Marketplace", href: "/marketplace" },
     { label: "Blog", href: "/blog" },

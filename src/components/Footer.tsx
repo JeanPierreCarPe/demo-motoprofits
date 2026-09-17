@@ -9,6 +9,7 @@ export function Footer() {
         src="/images/footer-background.webp"
         alt=""
         fill
+        sizes="100vw"
         className="-z-10 object-cover"
         aria-hidden
       />

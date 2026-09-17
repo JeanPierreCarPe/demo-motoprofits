@@ -18,7 +18,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
   return (
     <>
       <section className="relative flex h-[360px] items-end overflow-hidden px-5 pb-10 pt-[140px] sm:h-[440px] sm:px-10 lg:px-20">
-        <Image src={post.image} alt={post.title} fill priority className="-z-10 object-cover" />
+        <Image src={post.image} alt={post.title} fill priority sizes="100vw" className="-z-10 object-cover" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/90 via-black/30 to-black/10" aria-hidden />
         <Container className="flex flex-col gap-4">
           <span className="w-fit rounded-full bg-gold/20 px-4 py-1.5 font-heading text-xs font-extrabold uppercase tracking-wider text-gold">
@@ -66,7 +66,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
                   className="flex-1 min-w-64 overflow-hidden rounded-[16px] border border-foreground/20 bg-background"
                 >
                   <div className="relative h-36 w-full">
-                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                    <Image src={p.image} alt={p.title} fill sizes="256px" className="object-cover" />
                   </div>
                   <div className="p-4">
                     <p className="font-heading font-bold text-foreground">{p.title}</p>

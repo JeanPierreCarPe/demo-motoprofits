@@ -72,7 +72,7 @@ export default function AccountPage() {
                   >
                     <div className="flex items-center gap-4">
                       <div className="relative h-14 w-20 overflow-hidden rounded-lg">
-                        <Image src={vehicle.image} alt={vehicle.name} fill className="object-cover" />
+                        <Image src={vehicle.image} alt={vehicle.name} fill sizes="80px" className="object-cover" />
                       </div>
                       <div>
                         <p className="font-body font-semibold text-foreground">{vehicle.name}</p>
@@ -104,7 +104,7 @@ export default function AccountPage() {
                     className="flex w-64 items-center gap-3 rounded-xl border border-foreground/20 bg-surface-alt p-3 transition-colors hover:border-gold"
                   >
                     <div className="relative h-12 w-16 overflow-hidden rounded-lg">
-                      <Image src={v.image} alt={v.name} fill className="object-cover" />
+                      <Image src={v.image} alt={v.name} fill sizes="64px" className="object-cover" />
                     </div>
                     <div>
                       <p className="font-body text-sm font-semibold text-foreground">{v.name}</p>

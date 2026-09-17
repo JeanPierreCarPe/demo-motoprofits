@@ -15,7 +15,7 @@ export function StepCard({ number, image, title, description, tags, className = 
       className={`flex w-full flex-col items-start overflow-hidden rounded-[20px] border-2 border-foreground/50 bg-surface shadow-[0_0_20px_0_rgba(0,0,0,0.5)] lg:w-[calc(50%-1rem)] ${className}`}
     >
       <div className="relative flex h-64 w-full items-start p-5 sm:h-80 lg:h-96">
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image src={image} alt={title} fill sizes="(min-width: 1024px) 624px, 100vw" className="object-cover" />
         <span className="relative flex h-[68px] w-[100px] items-center justify-center rounded-full border-[3px] border-gold bg-surface-dark/75 font-heading text-3xl font-black uppercase tracking-[4px] text-gold backdrop-blur-[6px] sm:text-4xl">
           {number}
         </span>

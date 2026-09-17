@@ -12,7 +12,7 @@ type PageHeroProps = {
 export function PageHero({ eyebrow, title, paragraph, backgroundImage, children }: PageHeroProps) {
   return (
     <section className="relative flex min-h-[420px] flex-col items-center justify-end overflow-hidden px-5 pb-12 pt-[140px] sm:min-h-[480px] sm:px-10 lg:min-h-[560px] lg:px-20 lg:pb-16">
-      <Image src={backgroundImage} alt="" fill priority className="-z-20 object-cover" aria-hidden />
+      <Image src={backgroundImage} alt="" fill priority sizes="100vw" className="-z-20 object-cover" aria-hidden />
       <div className="absolute inset-0 -z-10 bg-black/70" aria-hidden />
 
       <div className="flex w-full max-w-[1440px] flex-col items-center gap-6 text-center sm:gap-8">
