@@ -29,14 +29,18 @@ export function Navbar() {
     <>
       <header
         className={`inset-x-0 top-0 z-50 flex h-20 items-center justify-between px-5 backdrop-blur-[6px] transition-colors duration-300 sm:px-10 lg:grid lg:h-[100px] lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:gap-2 lg:px-10 xl:px-20 ${
-          scrolled ? "fixed bg-surface-alt/95 shadow-[0_4px_20px_0_rgba(0,0,0,0.4)]" : "absolute bg-surface-alt/20"
+          scrolled ? "fixed bg-surface-alt shadow-[0_4px_20px_0_rgba(0,0,0,0.4)]" : "absolute bg-surface-alt/80"
         }`}
       >
-        <div className="hidden items-center gap-3 lg:flex lg:justify-self-start xl:gap-5">
-          {navLinks.left.map((link) => (
-            <PillButton key={link.label} href={link.href}>
-              {link.label}
-            </PillButton>
+        <div className="hidden items-center gap-4 lg:flex lg:justify-self-start xl:gap-5">
+          {footer.socials.map((social) => (
+            <span
+              key={social.label}
+              aria-label={`${social.label} (coming soon)`}
+              className="opacity-70"
+            >
+              <Image src={social.icon} alt="" width={22} height={22} className="h-[22px] w-[22px]" />
+            </span>
           ))}
         </div>
 
@@ -45,20 +49,12 @@ export function Navbar() {
         </a>
 
         <div className="hidden items-center gap-3 lg:flex lg:justify-self-end xl:gap-5">
-          {navLinks.right.map((link) => (
-            <PillButton key={link.label} href={link.href}>
-              {link.label}
-            </PillButton>
-          ))}
-          <PillButton href={navLinks.cta.href} className="border-none bg-gold-gradient text-surface-alt">
-            {navLinks.cta.label}
-          </PillButton>
           <button
             type="button"
             aria-label="Open menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen(true)}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-foreground/30 text-foreground transition-colors hover:border-gold hover:text-gold"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-gradient text-surface-alt transition-opacity hover:opacity-90"
           >
             <Menu size={20} />
           </button>
@@ -69,11 +65,11 @@ export function Navbar() {
           aria-label="Open menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(true)}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-full bg-gold-gradient lg:hidden"
         >
-          <span className="h-0.5 w-6 bg-foreground" />
-          <span className="h-0.5 w-6 bg-foreground" />
-          <span className="h-0.5 w-6 bg-foreground" />
+          <span className="h-0.5 w-6 bg-surface-alt" />
+          <span className="h-0.5 w-6 bg-surface-alt" />
+          <span className="h-0.5 w-6 bg-surface-alt" />
         </button>
       </header>
 
